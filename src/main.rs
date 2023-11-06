@@ -21,10 +21,10 @@ fn f2() {
     thread::sleep(Duration::from_millis(20));
 }
 fn f3() {
-    thread::sleep(Duration::from_millis(30));
+    thread::sleep(Duration::from_millis(20));
     f4()
 }
 
 fn f4() {
-    thread::sleep(Duration::from_millis(40));
+    thread::sleep(Duration::from_millis(20));
 }

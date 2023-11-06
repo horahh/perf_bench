@@ -6,3 +6,19 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+criterion = "0.5.1"
+
+[profile.release]
+debug = true
+
+[profile.bench]
+debug = true
+
+[lib]
+name = "perf_bench"
+path = "src/main.rs"
+
+[[bench]]
+name="perf_benchmark"
+harness = false
+path="src/perf_benchmark.rs"
